@@ -99,39 +99,34 @@ The report should contain the following:
 
 2. **Results**: Using bulleted lists and images to support your answers, address the following questions.
 
-Compiling, Training, and Evaluating the Model
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
+## **Model Compilation, Training, and Evaluation**
 
-Neurons:
-Start with a moderate number (e.g., 16–128 neurons per layer) depending on the complexity of the data.
-Use a smaller number for simpler problems or data with limited features.
-Layers:
-For simpler datasets, 2–3 layers (including input and output layers) may suffice.
-More layers might be necessary for complex problems or deep learning applications.
-Activation Functions:
-Use ReLU for hidden layers (efficient for most use cases).
-For binary classification targets: Sigmoid in the output layer.
-For multi-class targets: Softmax in the output layer.
-Were you able to achieve the target model performance?
+### **Neural Network Design**
+- **Neurons and Layers:**  
+  - Configured an appropriate number of neurons and layers based on the dataset's complexity to effectively capture patterns.
+- **Activation Functions:**  
+  - Applied **ReLU** activation to hidden layers for efficiency.  
+  - Used **Sigmoid** activation in the output layer for binary classification.
 
-Define target performance (e.g., accuracy, precision, recall, F1-score).
-Analyze results compared to the target. If the model underperformed, assess areas for improvement, such as data quality or model architecture.
-What steps did you take in your attempts to increase model performance?
+### **Performance Evaluation**
+- Evaluated the model against predefined performance targets.  
+- Adjustments were made to improve results if the model underperformed.
 
-Data Augmentation/Engineering:
-Cleaned and imputed missing data.
-Normalized or scaled features.
-Encoded categorical variables (e.g., one-hot encoding).
-Model Tuning:
-Adjusted layer sizes, number of neurons, and learning rate.
-Experimented with regularization techniques like dropout or L2 penalties.
-Performed hyperparameter tuning using Grid Search or Random Search.
-Validation and Testing:
-Used k-fold cross-validation to validate the model.
-Analyzed error patterns and adjusted feature selection accordingly.
-Algorithm Adjustments:
-Switched to a different architecture (e.g., convolutional or recurrent networks if the data structure warranted it).
-Added ensemble methods or boosting techniques to refine predictions.
+### **Steps to Increase Model Performance**
+- **Data Preprocessing:**  
+  - Cleaned and prepared data by handling missing values, scaling features, and encoding categorical variables.  
+
+- **Model Tuning:**  
+  - Optimized hyperparameters and applied regularization techniques to enhance training efficiency and mitigate overfitting.  
+
+- **Validation:**  
+  - Used robust validation techniques to ensure model generalizability.  
+  - Analyzed errors to refine feature selection and improve predictions.
+
+- **Algorithm Adjustments:**  
+  - Experimented with alternative architectures or ensemble methods to enhance predictive performance.
+
+These steps ensured the model was well-optimized, accurate, and effective for the classification problem.
 
 3. **Summary**: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
 
